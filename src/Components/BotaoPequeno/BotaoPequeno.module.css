@@ -1,0 +1,15 @@
+.botao{
+    width: 159px;
+    height: 56px;
+    background-color: #DB4444;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.container{
+    display: flex;
+    position: absolute;
+    right: 80px;
+}

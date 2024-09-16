@@ -1,0 +1,40 @@
+.rediv{
+    height: 40px;
+    width: 20px;
+    background-color: #DB4444;
+    border-radius: 5px;
+}
+
+.titSubContainer{
+    flex-direction: column;
+}
+
+.txtsubtitle{
+    color: #DB4444;
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+.subtitulo{
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    margin-top: 15px;
+}
+
+.container{
+    margin-left: 101px;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    margin-top: 98px;
+}
+
+.cards{
+    display: flex;
+}

@@ -1,0 +1,47 @@
+.promotion{
+    display: flex;
+    position: relative;
+    height: 48px;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.shop{
+    margin-left: 10px;
+    color: white;
+}
+
+.shop:visited {
+    color: white; 
+}
+
+.shop:hover {
+    color: #DB4444; 
+}
+
+.shop:active {
+    color: white; 
+}
+
+
+.dropdown{
+    position: absolute;
+    right: 136px;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown:focus{
+    outline: none;
+}
+
+.opcao{
+    color: white;
+    background-color: black;
+}
+

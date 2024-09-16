@@ -1,0 +1,19 @@
+.containerSetas{
+    display: flex;
+    position: absolute;
+    right: 100px;
+}
+
+.fundoSetas{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color:#F5F5F5;
+}
+
+#setaDireita{
+    margin-left: 10px;
+}
