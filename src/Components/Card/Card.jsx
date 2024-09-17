@@ -4,14 +4,14 @@ import Olho from '../../assets/Olho'
 import Estrela from '../Estrelas/Estrela'
 
 
-export default function Card({ img, porcent, titulo, preco, precoAntigo, precoAntigoQuant, quantEstrela, avaliacao }) {
+export default function Card({ img, desconto, porcent, nomeProd, preco, precoAntigo, precoAntigoQuant, quantEstrela, avaliacao }) {
     return (
         <div className={styles.container}>
             <div className={styles.containerCinza}>
 
                 <img className={styles.img} src={img} alt="" />
 
-                <div className={styles.porcent}>-{porcent}%</div>
+                {desconto ? <div className={styles.porcent}>-{porcent}%</div> : null}
                 
                 <div className={styles.icons}>
                     <div className={styles.fundoIcons}>
@@ -25,7 +25,7 @@ export default function Card({ img, porcent, titulo, preco, precoAntigo, precoAn
             </div>
 
             <div className={styles.informacoes}>
-                <p className={styles.titulo}>{titulo}</p>
+                <p className={styles.titulo}>{nomeProd}</p>
 
                 <div className={styles.precos}>
                     <p className={styles.preco}>${preco}</p>

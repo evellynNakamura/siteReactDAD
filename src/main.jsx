@@ -6,7 +6,6 @@ import heroApple from "./assets/heroApple.png";
 import styles from './index.module.css';
 import Section from './Components/Section/Section.jsx'
 import {secoes} from '../public/Sections/data.js'
-import {produtosFlash} from '../public/Sections/data.js'
 
 
 createRoot(document.getElementById('root')).render(
@@ -15,19 +14,13 @@ createRoot(document.getElementById('root')).render(
 
     <img className={styles.banner} src={heroApple} alt="" />
 
-    <Section subtitle = {
-      secoes[0].subtitle} title={secoes[0].title} 
+    <Section 
+      subtitle = {secoes[0].subtitle} 
+      title={secoes[0].title} 
       time={true} 
       seta={true} 
       botao={false} 
-      porcent={40} 
       cardProduto={true}
-      nomeProd={produtosFlash[0].nomeProd}
-      preco={120}
-      precoAntigo={true}
-      precoAntigoQuant={160}
-      quantEstrela={2}
-      avaliacao={99}
     />
 
     <Section subtitle = {

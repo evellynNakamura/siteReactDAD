@@ -6,7 +6,7 @@ import Card from '../Card/Card'
 import { imgsFlash } from '../../../public/Sections/data'
 
 export default function Section({ 
-    title, subtitle, time, seta, botao, porcent, cardProduto, nomeProd, preco, precoAntigo, precoAntigoQuant, quantEstrela, avaliacao }) {
+    title, subtitle, time, seta, botao, cardProduto }) {
     return (
         <div className={styles.container}>
             <div className={styles.cabecalho}>
@@ -27,21 +27,22 @@ export default function Section({
             </div>
 
             <div className={styles.cards}>
-                {cardProduto && imgsFlash && imgsFlash.length > 0 ? (
-                imgsFlash.map((imgFlash, index) => (
-                <Card
-                    img={imgFlash.url}
-                    porcent={imgFlash.porcent}
-                    titulo={nomeProd}
-                    preco={preco}
-                    precoAntigo={precoAntigo}
-                    precoAntigoQuant={precoAntigoQuant}
-                    quantEstrela={quantEstrela}
-                    avaliacao={avaliacao}
-                    key={index} 
-                />
+                {cardProduto && imgsFlash && imgsFlash.length > 0 ? 
+                (imgsFlash.map((imgFlash, index) => (
+                    <Card
+                        img={imgFlash.url}
+                        desconto={imgFlash.desconto}
+                        porcent={imgFlash.porcent}
+                        nomeProd={imgFlash.nomeProd}
+                        preco={imgFlash.preco}
+                        precoAntigo={imgFlash.precoAntigo}
+                        precoAntigoQuant={imgFlash.precoAntigoQuant}
+                        quantEstrela={imgFlash.quantEstrela}
+                        avaliacao={imgFlash.avaliacao}
+                        key={index} 
+                    />
                 ))
-            ) : null}
+                ) : null}
             </div>
 
         </div>

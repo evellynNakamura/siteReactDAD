@@ -6,16 +6,49 @@ export const secoes = [
     {title: "New Arrival", subtitle: "Featured"}
 ]
 
-export const produtosFlash = [
-    {nomeProd: "HAVIT HV-G92 Gamepad"},
-    {nomeProd: "AK-900 Wired Keyboard"},
-    {nomeProd: "IPS LCD Gaming Monitor"},
-    {nomeProd: "S-Series Comfort Chair "}
-]
-
 export const imgsFlash = [
-    {url: 'src/assets/ControleVermelho.png', porcent: "40"},
-    {url: 'src/assets/Teclado.png'},
-    {url: 'src/assets/Televisao.png'},
-    {url: 'src/assets/Cadeira.png'},
+    {
+        nomeProd: "HAVIT HV-G92 Gamepad", 
+        url: 'src/assets/ControleVermelho.png', 
+        desconto: true, 
+        porcent: "40",
+        preco: "120",
+        precoAntigo: true,
+        precoAntigoQuant: "160",
+        quantEstrela: "5",
+        avaliacao: "88"
+    },
+    {
+        nomeProd: "AK-900 Wired Keyboard", 
+        url: 'src/assets/Teclado.png', 
+        desconto: true, 
+        porcent: "35",
+        preco: "960",
+        precoAntigo: true,
+        precoAntigoQuant: "1160",
+        quantEstrela: "4",
+        avaliacao: "75"
+    },
+    {
+        nomeProd: "IPS LCD Gaming Monitor",
+        url: 'src/assets/Televisao.png', 
+        desconto: true, 
+        porcent: "30",
+        preco: "370",
+        precoAntigo: true,
+        precoAntigoQuant: "400",
+        quantEstrela: "5",
+        avaliacao: "99"
+    },
+    {
+        nomeProd: "S-Series Comfort Chair",
+        url: 'src/assets/Cadeira.png', 
+        desconto: true, 
+        porcent: "25",
+        preco: "375",
+        precoAntigo: true,
+        precoAntigoQuant: "400",
+        quantEstrela: "4",
+        avaliacao: "99"
+    },
 ]
